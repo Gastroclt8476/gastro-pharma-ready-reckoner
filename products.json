@@ -1,0 +1,1262 @@
+[
+  {
+    "company": "Sanliam",
+    "product": "ESMISOL 40/D/L",
+    "composition": "Esomeprazole (GR) 40mg Domperidone (SR) 30mg Levosulpiride 75mg",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "ESMISOL BD",
+    "composition": "Esomeprazole 40mg & Domperidone 10mg",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "CHOLESAN 150/450",
+    "composition": "Ursodeoxycholic Acid 150/450 mg",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "GLUTANOL",
+    "composition": "Glutathione 600mg Injection / 500mg Tablet",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "L-CHAIN LIV",
+    "composition": "L-Leucine, L-Isoleucine, L-Valine (BCAA) 10g Sachet (Sugar Free)",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "OMEGAPHEN",
+    "composition": "Omega-3 Fatty Acid 500mg & Vitamin E 400 IU",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "RABESNUG IV/DSR",
+    "composition": "Rabeprazole Sodium 20mg IV Domperidone 30mg SR",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "MEBESAN-X",
+    "composition": "Mebeverine Hydrochloride 135mg & Chlordiazepoxide 5mg",
+    "indication": "Range of Products",
+    "page": 1
+  },
+  {
+    "company": "Sanliam",
+    "product": "RABESNUG CT",
+    "composition": "Rabeprazole Sodium 20mg (EC) + Cinitapride 3mg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "PROBISAN FORTE",
+    "composition": "Streptococcus Thermophilus, Lactobacillus Acidophilus, Bifidobacterium Longum, Bacillus Coagulans (45 billion CFU)",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "RENEGAB M",
+    "composition": "Gabapentin 100mg & Methylcobalamin 500mcg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "FAROHAIL CV",
+    "composition": "Faropenem 200mg & Clavulanic Acid 125mg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "FEBUWIN 40",
+    "composition": "Febuxostat 40mg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "SILOALPHA 4/8/D8",
+    "composition": "Silodosin 8mg & Dutasteride 0.5mg Silodosin 4/8mg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "LIACAL CT",
+    "composition": "Calcium Carbonate 500mg & Calcitriol 0.25 mcg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "KLEARLY",
+    "composition": "Potassium Magnesium Citrate 978mg & Vit. B6 15mg",
+    "indication": "Range of Products",
+    "page": 2
+  },
+  {
+    "company": "Sanliam",
+    "product": "CARVELOX",
+    "composition": "Carvedilol 3.125 6.25 mg",
+    "indication": "Range of Products",
+    "page": 3
+  },
+  {
+    "company": "Sanliam",
+    "product": "RIFOXA",
+    "composition": "Rifaximin 400mg IP",
+    "indication": "Range of Products",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Pylobis",
+    "composition": "Colloidal Bismuth Subcitrate 120mg",
+    "indication": "H. pylori / Gastric Support",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "KEZAN",
+    "composition": "Vonoprazan 20mg",
+    "indication": "Acid Peptic Disorders",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Rifasan",
+    "composition": "Rifaximin 400mg 550mg",
+    "indication": "Gut / Antibiotic IBD",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Mebavir",
+    "composition": "Mebeverine HCl 135mg + Chlordiazepoxide 5mg",
+    "indication": "IBS / Spasmolytic",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "PROKINS",
+    "composition": "Itopride Hydrochloride 50mg",
+    "indication": "Prokinetic",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "TPIVENS-E",
+    "composition": "Natural Vitamin E 400 IU (+ Omega 3 fatty acid 500mg in variant)",
+    "indication": "Nutritional Supplement",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "ACINOX",
+    "composition": "Antioxidants for Pancreatic Pain",
+    "indication": "Pancreatitis",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Refra",
+    "composition": "Midodrine Hydrochloride 2.5mg / 5mg",
+    "indication": "Vasopressor Cirrhosis Support",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Esopresin",
+    "composition": "Terlipressin Injection 1mg/10ml",
+    "indication": "Variceal Bleed Portal Hypertension",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Entaclude",
+    "composition": "Entecavir Tablet 0.5mg / Injection",
+    "indication": "Hepatitis B Management",
+    "page": 3
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Eziem-20/40",
+    "composition": "Esomeprazole 20mg / 40mg",
+    "indication": "GERD / PPI",
+    "page": 4
+  },
+  {
+    "company": "San Fegan Biotech",
+    "product": "Axibis",
+    "composition": "Chlordiazepoxide 5mg + Clidinium 2.5mg + Dicyclomine 10mg",
+    "indication": "IBS / Antispasmodic",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "VONOGRESS-10/20",
+    "composition": "Vonoprazan 10mg",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS-20/40",
+    "composition": "Esomeprazole Gastro-Resistant",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS-80",
+    "composition": "Esomeprazole Dual",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS FAST-40",
+    "composition": "Esomeprazole Bicarbonate (Buffer)",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS-D",
+    "composition": "Esomeprazole EC Domperidone SR 30mg",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS-L",
+    "composition": "Esomeprazole EC Levosulpiride SR 75mg",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS-IT",
+    "composition": "Esomeprazole EC HCl SR 150mg",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 4
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "REBQUENCH",
+    "composition": "Rebamipide 100mg",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 5
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "RIFAXIGRESS",
+    "composition": "Rifaximin 200mg,",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 5
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "ESOGRESS-HP",
+    "composition": "Combipack: 500mg, Esomeprazole 40mg, Amoxicillin 750mg",
+    "indication": "H. Pylori Infection",
+    "page": 5
+  },
+  {
+    "company": "La Renon",
+    "product": "ESOGRESS-HP FORTE",
+    "composition": "Combikit: Clarithromycin 500mg, Esomeprazole 40mg, Amoxicillin 1000mg",
+    "indication": "H. Pylori Infection",
+    "page": 5
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "HEPAGRESS",
+    "composition": "Lactoferrin 100mg Billion CFU",
+    "indication": "H. Pylori / Liver",
+    "page": 5
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "CIRROSAM",
+    "composition": "Ademetionine Tablets 400mg",
+    "indication": "Liver Ailment",
+    "page": 5
+  },
+  {
+    "company": "La Renon",
+    "product": "LAMINO-BCAA SACHET",
+    "composition": "Branched Chain Amino Acids with Zinc Oral Powder (10g)",
+    "indication": "Liver Ailment",
+    "page": 5
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "VITQUENCH",
+    "composition": "DL-Methionine 40mg, Vitamin E 10mg, Beta Carotene 1800mcg, Zinc 12mg, Manganese 1.3mg, Selenium Yeast 200mcg",
+    "indication": "Nutritional Health",
+    "page": 5
+  },
+  {
+    "company": "La Renon (Lambent-Alfa)",
+    "product": "LAMINO GI PLUS",
+    "composition": "Whey Protein Taurine & Choline Bitartrate (200g Tin)",
+    "indication": "Nutritional",
+    "page": 6
+  },
+  {
+    "company": "La Renon",
+    "product": "DIVAHENZ",
+    "composition": "Carvedilol 3.125mg and 6.25mg",
+    "indication": "Portal Hypertension in Cirrhotic Patients",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "THIOTRES",
+    "composition": "Glutathione 600mg L-Glutathione 500mg Tablets",
+    "indication": "Liver Ailment Disease / Cirrhosis",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "DAMIR",
+    "composition": "Alpha Tablets",
+    "indication": "Liver Ailment",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "MAHARAFT",
+    "composition": "Sodium Alginate Bicarbonate 133.5mg & Calcium Carbonate 80mg Suspension (200ml)",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "RAMLAREN",
+    "composition": "Ramosetron mcg Tablets",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "BENIZEP SR-200",
+    "composition": "Mebeverine 200mg Capsules",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "BENIZEP",
+    "composition": "Chlordiazepoxide Release Mebeverine 135mg Capsules",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 6
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "ENZISPOR",
+    "composition": "Spores of Multi Resistant Bacillus Clausii 2 Billion CFU Capsules",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "MESAHENZ",
+    "composition": "Mesalamine 400mg Release & 1200mg Prolonged Release Tablets",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "TOFAHENZ",
+    "composition": "Tofacitinib 5mg",
+    "indication": "IBD / IBS / Diarrhea",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "PRULAREN",
+    "composition": "Prucalopride 1mg &",
+    "indication": "Constipation",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "PARAFIREN",
+    "composition": "Liquid Paraffin Magnesia 3.75ml & Sodium Picosulphate 3.33mg Oral Suspension (170ml)",
+    "indication": "Constipation",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "CONSTICHEK",
+    "composition": "Lactitol 10gm, Inulin 3.5gm Powder",
+    "indication": "Constipation",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "CRITIZYME",
+    "composition": "Ubidecarenone L-Carnitine-L-Tartrate 500mg, Lycopene 10% USP 20mg Tablets",
+    "indication": "Nutritional",
+    "page": 7
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "CERTAMIN",
+    "composition": "Essential Amino",
+    "indication": "Nutritional",
+    "page": 8
+  },
+  {
+    "company": "La Renon (Lambent-Gamma)",
+    "product": "HNU-D3 60K",
+    "composition": "Cholecalciferol 60,000 IU Chewable Tablets & Nano Drops Oral Solution",
+    "indication": "Vitamin-D",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "Mesarem",
+    "composition": "Mesalamine Tablets & Pellets",
+    "indication": "Mild to Moderate",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "UCJAK-5/XR",
+    "composition": "Tofacitinib 5mg",
+    "indication": "Remission & - JAK Inhibitor",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "Feritero",
+    "composition": "Ferric Maltol, Folic Vitamin C & Vitamin D2 Capsules",
+    "indication": "Mild to Moderate Anemia in IBD",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "Feritero FCM",
+    "composition": "Ferric Injection 500mg 10ml",
+    "indication": "Severe Iron in IBD",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "Mabura 40 PEN PFS",
+    "composition": "Adalimumab 40mg",
+    "indication": "Ulcerative Colitis &",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "VOCAB 10/20",
+    "composition": "Vonoprazan 10mg",
+    "indication": "Reflux Esophagitis, Ulcer, H. pylori",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare",
+    "product": "Panmate 10000/25000",
+    "composition": "Pancreatin Delayed",
+    "indication": "Exocrine Pancreatic",
+    "page": 8
+  },
+  {
+    "company": "Hetero Healthcare (Astro Care)",
+    "product": "INMETH 50/100",
+    "composition": "Indomethacin Suppositories",
+    "indication": "Pain Expert",
+    "page": 9
+  },
+  {
+    "company": "Hetero Healthcare",
+    "product": "TRUGLYX",
+    "composition": "Semaglutide Injection (2mg/1.5ml & 4mg/3ml Pre-filled Pens)",
+    "indication": "Weight Management Diabetes / Liver Stiffness",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Ulysses",
+    "composition": "Ursodeoxycholic acid 150mg, 300mg Tablets",
+    "indication": "Gallbladder / Liver Care",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Ulysses SR 450",
+    "composition": "Ursodeoxycholic acid 450mg Tablets",
+    "indication": "Gallbladder / Liver Care",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Acogut",
+    "composition": "Acotiamide hydrochloride hydrate 100mg Tablets",
+    "indication": "Functional Dyspepsia Prokinetic",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Acogut 300 ER",
+    "composition": "Acotiamide hydrochloride hydrate 300mg Extended release Tablets",
+    "indication": "Functional Dyspepsia Prokinetic",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Lupisoz",
+    "composition": "Esomeprazole 40mg Tablets",
+    "indication": "GERD / Acid Reflux",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Lupisoz-D",
+    "composition": "Esomeprazole 40mg + Domperidone 30mg Capsules",
+    "indication": "GERD / Acid Reflux",
+    "page": 9
+  },
+  {
+    "company": "Ascender / Lupin",
+    "product": "Pegalup",
+    "composition": "Polyethylene Glycol, Sodium Chloride, Sodium Bicarbonate & Potassium Chloride (Oral Solution)",
+    "indication": "Bowel Cleanse Constipation",
+    "page": 9
+  },
+  {
+    "company": "Lupin",
+    "product": "Cizaspa IR 135",
+    "composition": "Mebeverine 135mg Tablets",
+    "indication": "IBS Care / Gut Motility",
+    "page": 10
+  },
+  {
+    "company": "Lupin",
+    "product": "Cizaspa-X",
+    "composition": "Mebeverine Hydrochloride 135mg + Chlordiazepoxide 5mg Tab",
+    "indication": "IBS / Spasmolytic",
+    "page": 10
+  },
+  {
+    "company": "Lupin",
+    "product": "Cizaspa-SR",
+    "composition": "Mebeverine Hydrochloride 200mg Sustained Release",
+    "indication": "IBS / Sustained Relief",
+    "page": 10
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Fexuclue",
+    "composition": "Fexuprazan Hydrochloride 40mg",
+    "indication": "Acid Peptic Disorders / GERD",
+    "page": 10
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Rifagut",
+    "composition": "Rifaximin 200mg Tablets",
+    "indication": "IBD / Diarrhea",
+    "page": 10
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Pruease",
+    "composition": "Prucalopride 1mg",
+    "indication": "Constipation",
+    "page": 10
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Lactihep",
+    "composition": "Lactitol 66.67% w/v",
+    "indication": "Constipation",
+    "page": 10
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Lactihep Plus+",
+    "composition": "Liquid Paraffin Magnesia 3.75ml + Sodium Picosulphate 3.33mg Oral Emulsion",
+    "indication": "Constipation",
+    "page": 10
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Prohance-HP",
+    "composition": "Whey Protein 45g + Fibers + Vital Vitamins & Minerals",
+    "indication": "Nutritional",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Prohance-Liv",
+    "composition": "Whey Protein 60g + Energy 389 Kcal",
+    "indication": "Liver Nutrition",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "SONATA LR",
+    "composition": "Lactobacillus",
+    "indication": "Probiotic",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma (Sunrion)",
+    "product": "Nusam",
+    "composition": "Ademetionine 1,4 200mg / 400mg Tablets",
+    "indication": "Liver Ailment",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Ursocol NF",
+    "composition": "Nor-ursodeoxycholic Acid 500mg",
+    "indication": "NAFLD / Enhanced Hepatoprotection",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Upadashine",
+    "composition": "Upadacitinib 45mg 30mg / 15mg Tablets",
+    "indication": "Moderate-to-sever e UC / Remission",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Ursocol",
+    "composition": "Ursodeoxycholic Acid",
+    "indication": "Gallbladder / Liver Care",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Mesacol OD/CR",
+    "composition": "Mesalamine OD CR Tablets",
+    "indication": "Ulcerative Colitis IBD",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "VSL#3",
+    "composition": "Probiotic formulation",
+    "indication": "Gut Health / IBD",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Voltapraz",
+    "composition": "Rabeprazole Antacid combination variant",
+    "indication": "GERD / Peptic Ulcer",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Xidorin 5",
+    "composition": "Medication variant",
+    "indication": "Gastroenterology Care",
+    "page": 11
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Actapro OD",
+    "composition": "Prokinetic / Gastro variant",
+    "indication": "Gastro Motility",
+    "page": 12
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Budez CR/OD",
+    "composition": "Budesonide Controlled Release OD",
+    "indication": "Inflammatory Bowel Disease / Crohn's",
+    "page": 12
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "Lubowel",
+    "composition": "Lubricant laxative variant",
+    "indication": "Constipation",
+    "page": 12
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "LactiFiber",
+    "composition": "Fiber supplement variant",
+    "indication": "Constipation / Bulk Laxative",
+    "page": 12
+  },
+  {
+    "company": "Sun Pharma",
+    "product": "HP Kit",
+    "composition": "H. pylori eradication kit",
+    "indication": "H. pylori Infection",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s",
+    "product": "MASHLO",
+    "composition": "Semaglutide Injection (0.25mg, 0.5mg, 1mg pens)",
+    "indication": "Weight Management Diabetes Support",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s (Zydus",
+    "product": "MASHEMA",
+    "composition": "Semaglutide Injection 15mg/3ml",
+    "indication": "Chronic Weight Management Metabolic Normalcy",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s",
+    "product": "VONO-20",
+    "composition": "Vonoprazan 20mg",
+    "indication": "Erosive Esophagitis,",
+    "page": 12
+  },
+  {
+    "company": "(Recura Alfa)",
+    "product": "VONO-10",
+    "composition": "10mg Tablets",
+    "indication": "H. pylori, Gastric & Duodenal Ulcers",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "ECONORM",
+    "composition": "Saccharomyces I-745",
+    "indication": "Dysbiosis and",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "RebaHeal",
+    "composition": "Rebamipide 100mg",
+    "indication": "Mucosal Healing",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "Vegaz OD / Sachet",
+    "composition": "Mesalamine 1.2g ER prolonged release pellets",
+    "indication": "Ulcerative Colitis",
+    "page": 12
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "Vegaz Suppository",
+    "composition": "Mesalamine",
+    "indication": "Proctitis / IBD",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "Agna",
+    "composition": "Pancreatin Delayed 10000 / 25000",
+    "indication": "Exocrine Pancreatic",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "SIBOFIX",
+    "composition": "Rifaximin 550 / 400",
+    "indication": "IBS-Related",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Alfa)",
+    "product": "Kinpride",
+    "composition": "Cinitapride 1mg",
+    "indication": "Prokinetic Motility",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO-40",
+    "composition": "Rabeprazole mg",
+    "indication": "Severe & Erosive",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO",
+    "composition": "Rabeprazole Tablets",
+    "indication": "GERD and APD",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO-Easy",
+    "composition": "Rabeprazole formulation for oral suspension)",
+    "indication": "Patients with breakthrough",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO-D",
+    "composition": "Rabeprazole 20 mg 30 mg SR Capsules",
+    "indication": "Reflux & Dyspepsia Vomiting",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO-L",
+    "composition": "Rabeprazole Levosulpiride SR 75 mg",
+    "indication": "Stress-induced",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO-IT",
+    "composition": "Rabeprazole Itopride hydrochloride 150 mg capsules",
+    "indication": "Diabetic Postprandial Distress Syndrome",
+    "page": 13
+  },
+  {
+    "company": "Dr. Reddy’s (Recura Titans)",
+    "product": "RAZO i.v.",
+    "composition": "Lyophilized sodium 20 mg injection",
+    "indication": "Upper GI bleed Operative GI problems",
+    "page": 14
+  },
+  {
+    "company": "Dr. Reddy’s",
+    "product": "COLOZO",
+    "composition": "Linaclotide 72 / 145 mcg Capsules",
+    "indication": "Chronic Constipation IBS-C / CIC",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Vorxar",
+    "composition": "Saroglitazar 4mg",
+    "indication": "Dyslipidemia Support",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Lintide",
+    "composition": "Linaclotide 72/145",
+    "indication": "Constipation",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Veloz",
+    "composition": "Rabeprazole 20mg",
+    "indication": "Acid Peptic",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Tegcise",
+    "composition": "Tegoprazan 50mg",
+    "indication": "Acid Peptic",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Veloz D",
+    "composition": "Rabeprazole Domperidone Maleate 30mg SR Capsules",
+    "indication": "GERD with Nausea",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Veloz IT",
+    "composition": "Rabeprazole Itopride 150mg SR Capsules",
+    "indication": "GERD with Delayed",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "ENZAR HS",
+    "composition": "Lipase 25000 Ph. Eur. Units, Amylase Units, Protease 1000 Ph. Eur. Units",
+    "indication": "Pancreatic Exocrine",
+    "page": 14
+  },
+  {
+    "company": "Torrent Pharma (Vista)",
+    "product": "Torbulk",
+    "composition": "Lactitol gm + Ispaghula Husk 3.5 gm Powder",
+    "indication": "Constipation",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "Sitcom Tablets / Cream",
+    "composition": "Euphorbia Prostrata Extract",
+    "indication": "Piles / Hemorrhoids Care",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "Sitcom Forte Tablets",
+    "composition": "Euphorbia Prostrata Extract 100mg + Calcium Dobesilate 500mg Tablets",
+    "indication": "Hemorrhoids Vascular Support",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "Sitcom LD Cream",
+    "composition": "Euphorbia Prostrata Extract 10mg/gm + Lidocaine 3% w/w Cream",
+    "indication": "Local Analgesic & Hemorrhoid Cream",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "AdvaUD",
+    "composition": "nor-Ursodeoxycholic Acid 500mg Tablets",
+    "indication": "NAFLD Hepatoprotection",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "VONATIME 20/10",
+    "composition": "Vonoprazan 20mg 10mg Tablet",
+    "indication": "Acid Peptic Disorders / GERD",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "Rifastop 550/400",
+    "composition": "Rifaximin 550mg 400mg Tablets",
+    "indication": "IBD / Gut Infection Antibiotic",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "COLONCOP",
+    "composition": "Mesalamine Tablets/Sachet",
+    "indication": "Ulcerative Colitis IBD",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "LIVOLUK",
+    "composition": "Lactulose 10g/15ml Solution",
+    "indication": "Constipation",
+    "page": 15
+  },
+  {
+    "company": "Mankind (Procare)",
+    "product": "BIFIOTA",
+    "composition": "Bifidobacterium longum W11 (5 Billion CFU) + Fructo-Oligosaccharides 2.5gm",
+    "indication": "Probiotic / Gut Health",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "Keylax Plus",
+    "composition": "Milk of Magnesia 1.25 ml + Sodium Picosulphate 3.33 mg + Liquid Paraffin 3.75 ml",
+    "indication": "Constipation Management",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "COLOMOP",
+    "composition": "Sodium Sulphate, Potassium Sulphate and Magnesium Sulphate Oral Solution",
+    "indication": "Bowel Preparation Kit",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "CYTOGIFT HEPA plus",
+    "composition": "Protein content 60 gm/100gm with American Ice-Cream Flavour",
+    "indication": "Nutritional / Liver Supplement",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "Roulgel-O Suspension",
+    "composition": "Magaldrate, Simethicone & Oxetacaine Suspension",
+    "indication": "Antacid / Mucosal Protectant",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "OMEGALEX-E",
+    "composition": "Omega 3 Fatty Acid BP 500 mg & Vitamin E Capsule IP 400 IU",
+    "indication": "Nutritional Supplement",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "Prucic I & 2",
+    "composition": "Prucalopride Tablets 1 mg & 2 mg",
+    "indication": "Chronic Idiopathic Constipation",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "Pegsana",
+    "composition": "Polyethylene glycol 3350 Powder for oral solution",
+    "indication": "Constipation",
+    "page": 16
+  },
+  {
+    "company": "Leios",
+    "product": "Ferroul-XT",
+    "composition": "Ferrous Ascorbate 100 mg + Folic Acid 1.5 Mg + Zinc 22.5 Mg",
+    "indication": "Iron Deficiency Anemia",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "BILENAC",
+    "composition": "N-Acetylcysteine 600 mg Tablet",
+    "indication": "Mucolytic Antioxidant Support",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "ESDEW-HP Forte",
+    "composition": "Combikit of Clarithromycin, Esomeprazole & Amoxicillin",
+    "indication": "H. Pylori Eradication",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "COLOMOP ADD Drops",
+    "composition": "Simethicone Oral Suspension U.S.P.",
+    "indication": "Pediatric Gas Relief Antiflatulent",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "MVPA",
+    "composition": "Multivitamin, Multimineral, Antioxidants Capsule",
+    "indication": "Nutritional Supplement",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "ESDEW-40/D",
+    "composition": "Esomeprazole 40mg (EC) & Domperidone 30mg (SR)",
+    "indication": "GERD / Acid Reflux",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "Rifascore-550/400/200",
+    "composition": "Rifaximin Tablets IP",
+    "indication": "Gut Health / IBD Antibiotic",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "ZENTAREX",
+    "composition": "Albendazole 400 mg Tablets IP",
+    "indication": "Anthelmintic",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "COCONS",
+    "composition": "Coconut Water Powder Drink",
+    "indication": "Hydration Electrolytes",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "Keylax-NF Cream",
+    "composition": "Lidocaine Hydrochloride & Nifedipine Cream",
+    "indication": "Anal Fissure / Local Relief",
+    "page": 17
+  },
+  {
+    "company": "Leios",
+    "product": "HK VON 20",
+    "composition": "Vonoprazan Tablets 20 mg",
+    "indication": "Acid Peptic Disorders / GERD",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Coloprep",
+    "composition": "Low volume oral",
+    "indication": "Colonoscopy Cleansing",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Coloview",
+    "composition": "Simethicone",
+    "indication": "Colonoscopy Colonic View",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Endoview",
+    "composition": "N-acetylcysteine Simethicone 150mg per 15ml emulsion",
+    "indication": "Welcome Drink Endoscopy / Upper GI",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Nashliv",
+    "composition": "Formulation for",
+    "indication": "MASLD & NASH Protection",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Livcramp Sachet",
+    "composition": "Formulation for",
+    "indication": "Prevention/Manage Cramps in Chronic Liver Disease",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra",
+    "product": "ALCOMAX (Tablet / IV)",
+    "composition": "Specialized formulation for alcoholics",
+    "indication": "Alcoholic Liver Disease / Cramps & Fatigue Relief",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Vopraz 10/20",
+    "composition": "Vonoprazan 10mg",
+    "indication": "H. Pylori & Non-Erosive GERD, Upper GI Bleeding",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "Bloatpill",
+    "composition": "Formulation for",
+    "indication": "Relief of Bloating",
+    "page": 18
+  },
+  {
+    "company": "Sai Mirra (Innopharma)",
+    "product": "D-Peg Plus",
+    "composition": "Formulation for chronic",
+    "indication": "Chronic",
+    "page": 18
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "DDR 60",
+    "composition": "Dexlansoprazole MR 60 mg capsules",
+    "indication": "GERD",
+    "page": 19
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "DDR-D",
+    "composition": "Dexlansoprazole Modified Release 60 mg + Domperidone 30 mg (10 mg IR + 20 mg SR)",
+    "indication": "GERD",
+    "page": 19
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "DDRAFT",
+    "composition": "Alginate Raft-forming Oral Suspension B.P.",
+    "indication": "GERD",
+    "page": 19
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "Plectide",
+    "composition": "Plecanatide 3 mg Tablets",
+    "indication": "Constipation",
+    "page": 19
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "Gutwash-4000",
+    "composition": "Polyethylene Glycol 4000 (10gm / 25ml)",
+    "indication": "Constipation",
+    "page": 19
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "Upadoz",
+    "composition": "Upadacitinib 15mg 30mg / 45mg Tablet",
+    "indication": "Inflammatory Bowel Disease / IBD / UC Crohn's Disease",
+    "page": 19
+  },
+  {
+    "company": "MSN Laboratories",
+    "product": "Tapal-ER",
+    "composition": "Tapentadol Extended Release 50mg / 100mg Tablets",
+    "indication": "Acute & Chronic Pain",
+    "page": 19
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "BILEPASS-150/300",
+    "composition": "Ursodeoxycholic Acid 150mg / 300mg Tablets",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "VONIQ-20",
+    "composition": "Vonoprazan 20mg Tablets",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "BOWEL CLEAN",
+    "composition": "Sodium sulphate 17.50 gm + Potassium sulphate 3.13 gm + Magnesium sulphate 1.60 gm Oral Bowel Preparation Solution",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "PUFACTO",
+    "composition": "Omega 3 Fatty Acids 500mg + Vitamin E 400mg Soft Gelatin Capsules",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "EYSIRIFA-200/400/550",
+    "composition": "Rifaximin 200mg / 400mg / 550mg Tablets",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "MESAFLAR-400/800/OD",
+    "composition": "Mesalamine 400mg / 800mg / 1.2g OD Tablets",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "SYSRAFT",
+    "composition": "Each 5 ml: Sodium Alginate 250mg + Sodium Bicarbonate 133.5mg + Calcium Carbonate 80mg Oral Suspension",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  },
+  {
+    "company": "Eysys Pharmaceutical Pvt. Ltd. (Amaris)",
+    "product": "RELOL ACT DUO-90GM/180GM",
+    "composition": "Lactitol Monohydrate 10gm + Ispaghula Husk 3.5gm Granules",
+    "indication": "Not specified in supplied image",
+    "source": "WhatsApp image 24 Aug 2026"
+  }
+]

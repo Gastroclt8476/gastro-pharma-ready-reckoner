@@ -1,0 +1,11 @@
+{
+  "name": "Gastro Pharma Ready Reckoner",
+  "short_name": "Gastro Pharma",
+  "description": "Searchable Gastro Pharma Ready Reckoner",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b5cab",
+  "orientation": "portrait",
+  "icons": []
+}
