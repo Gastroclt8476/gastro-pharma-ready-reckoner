@@ -1,9 +1,10 @@
-const CACHE_NAME = "gastro-pharma-v3";
+const CACHE_NAME = "gastro-pharma-v4";
 const CORE = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./products.json"
+  "./products.json",
+  "./additional-products.json"
 ];
 
 self.addEventListener("install", event => {
@@ -30,7 +31,7 @@ self.addEventListener("fetch", event => {
 
   if (url.origin !== self.location.origin) return;
 
-  if (url.pathname.endsWith("/products.json")) {
+  if (url.pathname.endsWith("/products.json") || url.pathname.endsWith("/additional-products.json")) {
     event.respondWith(
       fetch(event.request, { cache: "no-store" })
         .then(response => {
