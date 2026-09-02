@@ -18,10 +18,24 @@
 <main><div id="count" class="count">Loading products…</div><div id="results"></div></main>
 <script>
 const CATEGORY_RULES={GERD:/gerd|reflux|dyspepsia|gastritis|acid|ppi|proton pump/i,IBD:/ibd|ulcerative colitis|crohn|mesalamine|mesalazine|inflammatory bowel/i,IBS:/ibs|irritable bowel|functional bowel/i,Liver:/liver|hepatic|cirrhosis|nafld|masld|hepatitis|encephalopathy/i,Pancreas:/pancreas|pancreatic|pancreatitis/i,Constipation:/constipation|laxative|stool|ispaghula|lactitol|lactulose/i,"H. pylori":/h\.?\s*pylori|helicobacter/i,Diarrhea:/diarrhea|diarrhoea|loose stool|ors|oral rehydration/i,Nutrition:/nutrition|protein|vitamin|omega|micronutrient|supplement/i,Prokinetic:/prokinetic|domperidone|levosulpiride|itopride|mosapride|metoclopramide/i,"Bowel preparation":/bowel preparation|bowel prep|sodium picosulfate|polyethylene glycol|magnesium sulphate/i};
+const ESYS_ALIAS=/\b(?:esys|esys pharma|esys pharmaceutical|amaris)\b/i;
+const ESYS_PRODUCT_NAMES=/bilepass|eysirifa|voniq|sysraft|bowelclean|mesafilar|mesaflar|relolact/i;
 let products=[],activeCategory="All";const $=id=>document.getElementById(id);
 function textOf(p){return Object.values(p||{}).filter(v=>v!==null&&v!==undefined).map(v=>typeof v==="object"?JSON.stringify(v):String(v)).join(" ");}
 function normalizeSearch(s){return String(s||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[\u00a0]/g," ").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();}
-function searchMatches(p,q){if(!q)return true;const hay=normalizeSearch(textOf(p));const words=normalizeSearch(q).split(" ").filter(Boolean);return words.every(w=>hay.includes(w));}
+function searchMatches(p,q){
+  if(!q)return true;
+  const nq=normalizeSearch(q);
+  const hay=normalizeSearch(textOf(p));
+  /* Eysys Pharmaceutical has products entered under slightly different
+     company labels, including its Amaris division. Treat these as one
+     searchable company so "esys" and "esys pharma" return the full set. */
+  if(/^(esys|esys pharma|esys pharmaceutical|amaris)$/.test(nq)){
+    return ESYS_ALIAS.test(textOf(p)) || ESYS_PRODUCT_NAMES.test(hay);
+  }
+  const words=nq.split(" ").filter(Boolean);
+  return words.every(w=>hay.includes(w));
+}
 function categoryMatches(p,c){return c==="All"||CATEGORY_RULES[c].test(textOf(p));}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
 function renderFilters(){$("filters").innerHTML=["All",...Object.keys(CATEGORY_RULES)].map(c=>`<button class="filter ${c===activeCategory?"active":""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderFilters();render()});}
