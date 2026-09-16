@@ -20,18 +20,32 @@
 const CATEGORY_RULES={GERD:/gerd|reflux|dyspepsia|gastritis|acid|ppi|proton pump/i,IBD:/ibd|ulcerative colitis|crohn|mesalamine|mesalazine|inflammatory bowel/i,IBS:/ibs|irritable bowel|functional bowel/i,Liver:/liver|hepatic|cirrhosis|nafld|masld|hepatitis|encephalopathy/i,Pancreas:/pancreas|pancreatic|pancreatitis/i,Constipation:/constipation|laxative|stool|ispaghula|lactitol|lactulose/i,"H. pylori":/h\.?\s*pylori|helicobacter/i,Diarrhea:/diarrhea|diarrhoea|loose stool|ors|oral rehydration/i,Nutrition:/nutrition|protein|vitamin|omega|micronutrient|supplement/i,Prokinetic:/prokinetic|domperidone|levosulpiride|itopride|mosapride|metoclopramide/i,"Bowel preparation":/bowel preparation|bowel prep|sodium picosulfate|polyethylene glycol|magnesium sulphate/i};
 const ESYS_ALIAS=/\b(?:esys|eysys|esys pharma|esys pharmaceutical|eysys pharmaceutical|amaris)\b/i;
 const ESYS_PRODUCT_NAMES=/bilepass|eysirifa|voniq|sysraft|bowelclean|mesafilar|mesaflar|relolact|pufacto/i;
+const SEARCH_ALIASES={
+  hpylori:["h pylori","helicobacter"],
+  helicobacter:["h pylori","hpylori"],
+  ibs:["ibs","irritable bowel","functional bowel"],
+  constipation:["constipation","laxative","stool"],
+  diarrhea:["diarrhea","diarrhoea","loose stool"],
+  diarrhoea:["diarrhea","diarrhoea","loose stool"]
+};
 let products=[],activeCategory="All";const $=id=>document.getElementById(id);
 function textOf(p){return Object.values(p||{}).filter(v=>v!==null&&v!==undefined).map(v=>typeof v==="object"?JSON.stringify(v):String(v)).join(" ");}
 function normalizeSearch(s){return String(s||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[\u00a0]/g," ").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();}
+function compactSearch(s){return normalizeSearch(s).replace(/\s+/g,"");}
 function searchMatches(p,q){
   if(!q)return true;
   const nq=normalizeSearch(q);
   const hay=normalizeSearch(textOf(p));
+  const compactHay=compactSearch(textOf(p));
   if(/^(esys|eysys|esys pharma|esys pharmaceutical|eysys pharmaceutical|amaris)$/.test(nq)){
     return ESYS_ALIAS.test(textOf(p)) || ESYS_PRODUCT_NAMES.test(hay);
   }
   const words=nq.split(" ").filter(Boolean);
-  return words.every(w=>hay.includes(w));
+  return words.every(w=>{
+    if(hay.includes(w)||compactHay.includes(compactSearch(w)))return true;
+    const aliases=SEARCH_ALIASES[w]||[];
+    return aliases.some(a=>hay.includes(normalizeSearch(a))||compactHay.includes(compactSearch(a)));
+  });
 }
 function categoryMatches(p,c){return c==="All"||CATEGORY_RULES[c].test(textOf(p));}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
