@@ -17,97 +17,35 @@
 <header><h1>Gastro Pharma Ready Reckoner</h1><input id="search" class="search" type="search" placeholder="Search brand, generic, composition, company, indication…" autocomplete="off"><div id="filters" class="filters"></div></header>
 <main><div id="count" class="count">Loading products…</div><div id="results"></div></main>
 <script>
-/*
-  IMPORTANT SEARCH RULE:
-  Category buttons are driven primarily by the PRODUCT'S INDICATION, not by
-  every field in the record. This prevents a generic ingredient such as
-  "ursodeoxycholic acid" from making a liver product appear under GERD.
-*/
 const CATEGORY_RULES={
-  GERD:/\bgerd\b|reflux|reflux esophagitis|heartburn|acid peptic|peptic ulcer|hyperacidity|gastroesophageal/i,
-  IBD:/\bibd\b|ulcerative colitis|crohn|inflammatory bowel|mesalamine|mesalazine/i,
-  IBS:/\bibs\b|irritable bowel|functional bowel/i,
-  Liver:/liver|hepatic|cirrhosis|nafld|masld|hepatitis|encephalopathy|cholestatic/i,
-  Pancreas:/pancreas|pancreatic|pancreatitis/i,
-  Constipation:/constipation|laxative|stool|ispaghula|lactitol|lactulose|prucalopride|elobixibat|polyethylene glycol/i,
-  "H. pylori":/h\.?\s*pylori|helicobacter/i,
-  Diarrhea:/diarrhea|diarrhoea|loose stool|oral rehydration/i,
-  Nutrition:/nutrition|nutritional|protein|vitamin|micronutrient|supplement/i,
-  Prokinetic:/prokinetic|motility|gastroparesis/i,
-  "Bowel preparation":/bowel preparation|bowel prep|colonoscopy cleansing|colonic view|ct colonography|capsule endoscopy/i
+ GERD:{indication:/\b(gerd|reflux|reflux esophagitis|heartburn|acid peptic|peptic ulcer|dyspepsia|gastritis)\b/i,composition:/\b(pantoprazole|esomeprazole|rabeprazole|vonoprazan|omeprazole|lansoprazole|dexlansoprazole|famotidine|nizatidine|ranitidine)\b/i},
+ IBD:{indication:/\b(ibd|ulcerative colitis|crohn|inflammatory bowel)\b/i,composition:/\b(mesalamine|mesalazine|budesonide|tofacitinib|upadacitinib|infliximab|adalimumab|vedolizumab|ustekinumab)\b/i},
+ IBS:{indication:/\b(ibs|irritable bowel|functional bowel)\b/i,composition:/\b(mebeverine|pinaverium|trimebutine|rifaximin|ramosetron|probiotic)\b/i},
+ Liver:{indication:/\b(liver|hepatic|cirrhosis|nafld|masld|mash|hepatitis|encephalopathy|cholestatic|portal hypertension|variceal)\b/i,composition:/\b(ursodeoxycholic|udca|rifaximin|lactulose|ornithine|aspartate|silymarin|ademetionine|glutathione|carvedilol|terlipressin)\b/i},
+ Pancreas:{indication:/\b(pancreas|pancreatic|pancreatitis)\b/i,composition:/\b(pancreatin|pancrelipase|tauroglycocholate)\b/i},
+ Constipation:{indication:/\b(constipation|laxative|stool|bowel habit)\b/i,composition:/\b(ispaghula|lactitol|lactulose|prucalopride|elobixibat|polyethylene glycol|macrogol|senna|bisacodyl)\b/i},
+ "H. pylori":{indication:/\b(h\.?\s*pylori|helicobacter)\b/i,composition:/\b(vonoprazan|amoxicillin|clarithromycin|metronidazole|tinidazole|bismuth)\b/i},
+ Diarrhea:{indication:/\b(diarrhea|diarrhoea|loose stool|oral rehydration)\b/i,composition:/\b(probiotic|racecadotril|rifaximin|oral rehydration)\b/i},
+ Nutrition:{indication:/\b(nutrition|nutritional|protein|vitamin|micronutrient|supplement)\b/i,composition:/\b(protein|vitamin|omega|amino acid|bcaas?|zinc|selenium|micronutrient)\b/i},
+ Prokinetic:{indication:/\b(prokinetic|gastroparesis|dyspepsia)\b/i,composition:/\b(domperidone|levosulpiride|itopride|mosapride|metoclopramide|cinitapride|acotiamide)\b/i},
+ "Bowel preparation":{indication:/\b(bowel preparation|bowel prep)\b/i,composition:/\b(sodium picosulfate|polyethylene glycol|macrogol|magnesium sulphate|magnesium sulfate)\b/i}
 };
-
-/* Conservative clinical aliases for the free-text search. Do not use broad
-   words such as "acid" alone for GERD, because they occur in many unrelated
-   drug compositions (e.g. ursodeoxycholic acid). */
 const CLINICAL_ALIASES={
-  "hpylori":["h pylori","helicobacter pylori","helicobacter"],
-  "h pylori":["h pylori","hpylori","helicobacter pylori","helicobacter"],
-  helicobacter:["h pylori","hpylori","helicobacter pylori"],
-  "h pylori infection":["h pylori","helicobacter"],
-  constipation:["constipation","chronic constipation","laxative","stool","prucalopride","elobixibat","lactitol","lactulose","polyethylene glycol","ispaghula"],
-  "chronic constipation":["constipation","laxative","prucalopride","elobixibat","lactitol","lactulose","polyethylene glycol","ispaghula"],
-  laxative:["constipation","laxative","prucalopride","elobixibat","lactitol","lactulose","polyethylene glycol","ispaghula"],
-  ibs:["ibs","irritable bowel","functional bowel","mebeverine"],
-  "irritable bowel":["ibs","irritable bowel","functional bowel","mebeverine"],
-  "irritable bowel syndrome":["ibs","irritable bowel","functional bowel","mebeverine"],
-  gerd:["gerd","reflux","reflux esophagitis","heartburn","pantoprazole","esomeprazole","rabeprazole","vonoprazan"],
-  reflux:["gerd","reflux","reflux esophagitis","heartburn","pantoprazole","esomeprazole","rabeprazole","vonoprazan"],
-  heartburn:["heartburn","gerd","reflux","pantoprazole","esomeprazole","rabeprazole","vonoprazan"],
-  dyspepsia:["dyspepsia","epigastric pain","cinitapride","acotiamide","levosulpiride","domperidone"],
-  "epigastric pain":["dyspepsia","epigastric pain","cinitapride","mebeverine"],
-  gastroparesis:["gastroparesis","diabetic gastroparesis","cinitapride","prokinetic","domperidone","levosulpiride"],
-  "diabetic gastroparesis":["gastroparesis","cinitapride","prokinetic"],
-  "hepatic encephalopathy":["hepatic encephalopathy","encephalopathy","rifaximin","lactulose","ornithine","aspartate"],
-  "hepatic encephalopathy he":["hepatic encephalopathy","encephalopathy","rifaximin","lactulose","ornithine","aspartate"],
-  "variceal bleed":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],
-  "variceal bleeding":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],
-  "variceal hemorrhage":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],
-  "variceal haemorrhage":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],
-  liver:["liver","hepatic","cirrhosis","cholestatic","ursodeoxycholic","udca","rifaximin","ornithine","glutathione"],
-  hepatic:["hepatic","liver","cirrhosis","encephalopathy","cholestatic","ursodeoxycholic"],
-  cholestasis:["cholestatic","ursodeoxycholic","udca"],
-  gout:["gout","hyperuricemia","febuxostat"],
-  hyperuricemia:["hyperuricemia","gout","febuxostat"],
-  diarrhea:["diarrhea","diarrhoea","loose stool","probiotic"],
-  diarrhoea:["diarrhea","diarrhoea","loose stool","probiotic"],
-  pancreas:["pancreas","pancreatic","pancreatitis"],
-  pancreatitis:["pancreatitis","pancreatic","pancreas"],
-  nutrition:["nutrition","nutritional","protein","vitamin","omega","micronutrient","supplement"],
-  "bowel prep":["bowel preparation","bowel prep","colonoscopy cleansing"],
-  "bowel preparation":["bowel preparation","bowel prep","colonoscopy cleansing"],
-  prokinetic:["prokinetic","motility","domperidone","levosulpiride","cinitapride","acotiamide","itopride","mosapride","metoclopramide"]
+ "hpylori":["h pylori","helicobacter pylori","helicobacter","vonoprazan"],"h pylori":["h pylori","hpylori","helicobacter pylori","helicobacter","vonoprazan"],helicobacter:["h pylori","hpylori","helicobacter pylori","vonoprazan"],"h pylori infection":["h pylori","helicobacter","vonoprazan"],
+ constipation:["constipation","chronic constipation","laxative","stool","prucalopride","elobixibat","lactitol","lactulose","polyethylene glycol","ispaghula"],"chronic constipation":["constipation","laxative","prucalopride","elobixibat","lactitol","lactulose","polyethylene glycol","ispaghula"],laxative:["constipation","laxative","prucalopride","elobixibat","lactitol","lactulose","polyethylene glycol","ispaghula"],
+ ibs:["ibs","irritable bowel","functional bowel","mebeverine","probiotic","bloating","abdominal pain","distension"],"irritable bowel":["ibs","irritable bowel","functional bowel","mebeverine","probiotic"],"irritable bowel syndrome":["ibs","irritable bowel","functional bowel","mebeverine","probiotic"],
+ gerd:["gerd","reflux","reflux esophagitis","heartburn","acid peptic","peptic ulcer","dyspepsia","gastritis","pantoprazole","esomeprazole","rabeprazole","vonoprazan"],reflux:["gerd","reflux","reflux esophagitis","heartburn","pantoprazole","esomeprazole","rabeprazole","vonoprazan"],heartburn:["heartburn","gerd","reflux","pantoprazole","esomeprazole","rabeprazole","vonoprazan"],
+ dyspepsia:["dyspepsia","epigastric pain","cinitapride","acotiamide","levosulpiride","domperidone"],"epigastric pain":["dyspepsia","epigastric pain","cinitapride","mebeverine"],gastroparesis:["gastroparesis","diabetic gastroparesis","cinitapride","prokinetic","domperidone","levosulpiride"],"diabetic gastroparesis":["gastroparesis","cinitapride","prokinetic"],
+ "hepatic encephalopathy":["hepatic encephalopathy","encephalopathy","rifaximin","lactulose","ornithine","aspartate"],"variceal bleed":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],"variceal bleeding":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],"variceal hemorrhage":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],"variceal haemorrhage":["variceal haemorrhage","variceal hemorrhage","terlipressin","octreotide"],
+ liver:["liver","hepatic","cirrhosis","cholestatic","ursodeoxycholic","udca","rifaximin","ornithine","glutathione"],hepatic:["hepatic","liver","cirrhosis","encephalopathy","cholestatic","ursodeoxycholic"],cholestasis:["cholestatic","ursodeoxycholic","udca"],gout:["gout","hyperuricemia","febuxostat"],hyperuricemia:["hyperuricemia","gout","febuxostat"],
+ diarrhea:["diarrhea","diarrhoea","loose stool","probiotic","ors"],diarrhoea:["diarrhea","diarrhoea","loose stool","probiotic","ors"],pancreas:["pancreas","pancreatic","pancreatitis"],pancreatitis:["pancreatitis","pancreatic","pancreas"],nutrition:["nutrition","protein","vitamin","omega","micronutrient","supplement"],"bowel prep":["bowel preparation","bowel prep","polyethylene glycol","sodium picosulfate"],"bowel preparation":["bowel preparation","bowel prep","polyethylene glycol","sodium picosulfate"],prokinetic:["prokinetic","domperidone","levosulpiride","cinitapride","acotiamide","itopride","mosapride","metoclopramide"]
 };
-
-const ESYS_ALIAS=/\b(?:esys|eysys|esys pharma|esys pharmaceutical|eysys pharmaceutical|amaris)\b/i;
-const ESYS_PRODUCT_NAMES=/bilepass|eysirifa|voniq|sysraft|bowelclean|mesafilar|mesaflar|relolact|pufacto/i;
+const ESYS_ALIAS=/\b(?:esys|eysys|esys pharma|esys pharmaceutical|eysys pharmaceutical|amaris)\b/i;const ESYS_PRODUCT_NAMES=/bilepass|eysirifa|voniq|sysraft|bowelclean|mesaflar|relolact|pufacto/i;
 let products=[],activeCategory="All";const $=id=>document.getElementById(id);
 function textOf(p){return Object.values(p||{}).filter(v=>v!==null&&v!==undefined).map(v=>typeof v==="object"?JSON.stringify(v):String(v)).join(" ");}
-function normalizeSearch(s){return String(s||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[\u00a0]/g," ").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();}
-function compactSearch(s){return normalizeSearch(s).replace(/\s+/g,"");}
-function searchMatches(p,q){
-  if(!q)return true;
-  const nq=normalizeSearch(q),hay=normalizeSearch(textOf(p)),compactHay=compactSearch(textOf(p));
-  if(/^(esys|eysys|esys pharma|esys pharmaceutical|eysys pharmaceutical|amaris)$/.test(nq))return ESYS_ALIAS.test(textOf(p))||ESYS_PRODUCT_NAMES.test(hay);
-  /* Exact/substring search across all stored fields remains available. */
-  if(hay.includes(nq)||compactHay.includes(compactSearch(nq)))return true;
-  const aliases=CLINICAL_ALIASES[nq];
-  if(aliases)return aliases.some(a=>hay.includes(normalizeSearch(a))||compactHay.includes(compactSearch(a)));
-  const words=nq.split(" ").filter(Boolean);
-  if(words.length>1){
-    const phrase=words.join(" ");
-    if(hay.includes(phrase)||compactHay.includes(words.join("")))return true;
-  }
-  return words.every(w=>hay.includes(w)||compactHay.includes(compactSearch(w))||((CLINICAL_ALIASES[w]||[]).some(a=>hay.includes(normalizeSearch(a))||compactHay.includes(compactSearch(a)))));
-}
-function categoryMatches(p,c){
-  if(c==="All")return true;
-  /* Category filtering is based on the source indication only. This is the
-     key fix: composition text such as "ursodeoxycholic acid" cannot cause a
-     product to appear in GERD merely because it contains the word "acid". */
-  const indication=normalizeSearch(p&&p.indication||"");
-  return CATEGORY_RULES[c].test(indication);
-}
+function normalizeSearch(s){return String(s||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[\u00a0]/g," ").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();}function compactSearch(s){return normalizeSearch(s).replace(/\s+/g,"");}
+function searchMatches(p,q){if(!q)return true;const nq=normalizeSearch(q),hay=normalizeSearch(textOf(p)),compactHay=compactSearch(textOf(p));if(/^(esys|eysys|esys pharma|esys pharmaceutical|eysys pharmaceutical|amaris)$/.test(nq))return ESYS_ALIAS.test(textOf(p))||ESYS_PRODUCT_NAMES.test(hay);if(hay.includes(nq)||compactHay.includes(compactSearch(nq)))return true;const aliases=CLINICAL_ALIASES[nq];if(aliases)return aliases.some(a=>hay.includes(normalizeSearch(a))||compactHay.includes(compactSearch(a)));const words=nq.split(" ").filter(Boolean);if(words.length>1){const phrase=words.join(" ");if(hay.includes(phrase)||compactHay.includes(words.join("")))return true;}return words.every(w=>hay.includes(w)||compactHay.includes(compactSearch(w))||((CLINICAL_ALIASES[w]||[]).some(a=>hay.includes(normalizeSearch(a))||compactHay.includes(compactSearch(a)))));}
+function categoryMatches(p,c){if(c==="All")return true;const rule=CATEGORY_RULES[c],ind=normalizeSearch(p.indication||""),comp=normalizeSearch(p.composition||"");return rule.indication.test(ind)||rule.composition.test(comp);}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
 function renderFilters(){$("filters").innerHTML=["All",...Object.keys(CATEGORY_RULES)].map(c=>`<button class="filter ${c===activeCategory?"active":""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderFilters();render()});}
 function render(){const q=$("search").value;const filtered=products.filter(p=>categoryMatches(p,activeCategory)&&searchMatches(p,q));$("count").textContent=`${filtered.length} product${filtered.length===1?"":"s"} found`;if(!filtered.length){$("results").innerHTML='<div class="empty">No matching products found.</div>';return}$("results").innerHTML=filtered.map(p=>`<article class="card"><div class="brand">${esc(p.product||"Unnamed product")}</div><div class="company">${esc(p.company||"")}</div><div class="label">Composition / Strength:</div><div class="value">${esc(p.composition||"Not specified")}</div><div class="label">Indication:</div><div class="value">${esc(p.indication||"Not specified")}</div>${p.page!==undefined&&p.page!==""?`<div class="page">Source page: ${esc(p.page)}</div>`:""}</article>`).join("");}
