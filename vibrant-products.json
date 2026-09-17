@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Vibrant",
+    "product": "PEGLEC-LX",
+    "composition": "Polyethylene Glycol 3350 + Potassium Chloride + Sodium Bicarbonate + Sodium Chloride",
+    "indication": "Bowel preparation / gastrointestinal lavage",
+    "source": "User-supplied product PDF"
+  },
+  {
+    "company": "Vibrant",
+    "product": "PEGLEC",
+    "composition": "Polyethylene Glycol + electrolytes",
+    "indication": "Bowel preparation / gastrointestinal lavage",
+    "source": "User-supplied product PDF"
+  },
+  {
+    "company": "Vibrant",
+    "product": "PEGLEC Plus",
+    "composition": "Polyethylene Glycol + electrolytes + Activated Dimethicone",
+    "indication": "Bowel preparation / gastrointestinal lavage",
+    "source": "User-supplied product PDF"
+  }
+]
