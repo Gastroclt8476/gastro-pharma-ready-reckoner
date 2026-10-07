@@ -1491,5 +1491,19 @@
     "composition": "Vonoprazan 10mg / 20mg tablets",
     "indication": "Acid-related disorders / GERD",
     "source": "Abbott India official GI & Hepato product listing, accessed 4 Oct 2026"
+  },
+  {
+    "company": "Dr. Reddy’s",
+    "product": "BixiBat",
+    "composition": "Elobixibat 5 mg, 10 mg Tablets",
+    "indication": "Chronic constipation",
+    "source": "Dr. Reddy’s Laboratories official launch information"
+  },
+  {
+    "company": "Dr. Reddy’s",
+    "product": "PCAB",
+    "composition": "Tegoprazan 50 mg Tablet",
+    "indication": "Erosive GERD, NERD, gastric ulcer",
+    "source": "Dr. Reddy’s Laboratories official launch information"
   }
 ]
