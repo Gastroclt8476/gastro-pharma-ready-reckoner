@@ -1,10 +1,12 @@
-const CACHE_NAME = "gastro-pharma-v4";
+const CACHE_NAME = "gastro-pharma-v5";
 const CORE = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./products.json",
-  "./additional-products.json"
+  "./additional-products.json",
+  "./biologics-products.json",
+  "./vibrant-products.json"
 ];
 
 self.addEventListener("install", event => {
@@ -28,17 +30,16 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
   const url = new URL(event.request.url);
-
   if (url.origin !== self.location.origin) return;
 
-  if (url.pathname.endsWith("/products.json") || url.pathname.endsWith("/additional-products.json")) {
+  if (/\/(products|additional-products|biologics-products|vibrant-products)\.json$/.test(url.pathname)) {
     event.respondWith(
       fetch(event.request, { cache: "no-store" })
         .then(response => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then(cache =>
-            cache.put(event.request, copy)
-          );
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
+          }
           return response;
         })
         .catch(() => caches.match(event.request))
@@ -47,12 +48,12 @@ self.addEventListener("fetch", event => {
   }
 
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: "no-store" })
       .then(response => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then(cache =>
-          cache.put(event.request, copy)
-        );
+        if (response.ok) {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
+        }
         return response;
       })
       .catch(() => caches.match(event.request))
